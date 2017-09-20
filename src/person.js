@@ -11,7 +11,7 @@ export const PERSON = {
     year: 1995,
     location: 'Kyiv, Ukraine'
   },
-  summary : 'Overall over 4 years of academic and work experience in software engineering. Solid experience in Mobile Applications Development. Interest for Data Science. Love for software architecture and design. Strong level of Java, JavaScript. Basic level of Python, R, Kotlin, C/C++.',
+  summary : 'Master of Data Science with over 4 years of academic and work experience in software engineering. Seeking position as machine learning engineer.',
   experience: [
     {
       company: 'Jutiful, Ltd.',
@@ -40,18 +40,19 @@ export const PERSON = {
       timeperiod: 'Nov 2015 - Feb 2016 (4 mos)',
       bullets: [
         'Leaded a small team in creation of private beta',
-        'Used innovative development methodologies for quick and lossless reactions to requirements change'
+        'Used innovative development methodologies for quick and lossless reactions to requirements change',
+        'Successfully delivered MVP in the shortest term'
       ]
     },
-    {
-      company: 'Freelance',
-      position: 'Web/Android Developer',
-      timeperiod: 'Dec 2014 - Nov 2015 (1 year)',
-      bullets: [
-        'Gained hands-on experience in Web and Android projects',
-        'Mastered OOP and Web development (Java, JavaScript)'
-      ]
-    }
+    // {
+    //   company: 'Freelance',
+    //   position: 'Web/Android Developer',
+    //   timeperiod: 'Dec 2014 - Nov 2015 (1 year)',
+    //   bullets: [
+    //     'Gained hands-on experience in real projects',
+    //     'Mastered OOP and Web development (Java, JavaScript)'
+    //   ]
+    // }
   ],
   education: [
     {
@@ -79,8 +80,12 @@ export const PERSON = {
           description: 'Python, R'
         },
         {
+          name: 'Techniques',
+          description: 'Clustering, Regression, Classification, Time series analysis'
+        },
+        {
           name: 'Machine Learning',
-          description: 'Regression, Classification, Clustering, Time series analysis, Computer Vision, NLP'
+          description: 'Computer Vision, NLP, Reinforcement Learning'
         },
         {
           name: 'Tools',
@@ -101,13 +106,27 @@ export const PERSON = {
       skills: [
         {
           name: 'Android',
-          description: 'Java/Kotlin, Support Library, Data Binding, RxJava/RxAndroid, Gradle DSL, Square Libs (Retrofit, Dagger2, Picasso), Glide, Google Services, Analytics'
+          description: 'Java/Kotlin, Support Library, Data Binding, RxJava/RxAndroid, Gradle DSL, JNI, NDK, Square Libs (Retrofit, Dagger2, Picasso), Glide, Google Services, Analytics'
         },
         {
           name: 'Web',
-          description: 'ES6, Node.js, Express, Impress, CSS3/HTML5, JSON, XML'
+          description: 'JavaScript ES6/CSS3/HTML5, Node.js, Express, Impress, JSON, XML'
+        },
+        {
+          name: 'Tools',
+          description: 'Intellij Idea, Git'
         }
       ]
+    }
+  ],
+  achievements: [
+    {
+      year: '2015',
+      description: 'Team leader of the UA Mobile Challenge finalist-team'
+    },
+    {
+      year: '2014',
+      description: 'Winner of the Open Mobile Hackathon KPI'
     }
   ],
   skillDescription: 'Also proficient with Android Development.',
@@ -117,7 +136,8 @@ export const PERSON = {
     street: '3201 S State Street',
     city: 'Chicago',
     website: 'appsmithy.com',
-    github: 'bolein'
+    github: 'bolein',
+    linkedin: 'vadymovcharenko'
   },
   lang: 'en' // en, de, fr
 };

@@ -7,6 +7,42 @@
       <span class="person-position">
             {{person.position}}
           </span>
+
+      <div class="contact-block">
+        <!--<h3>{{ lang.headings.contact }}</h3>-->
+        <div class="contacts">
+          <div class="contact-item icon">
+            <i class="fa email" aria-hidden="true"></i>
+          </div>
+          <div class="contact-item title">
+            <a :href="'mailto:'+person.contact.email">{{person.contact.email}}</a>
+          </div>
+          <div class="contact-item icon">
+            <i class="fa phone" aria-hidden="true"></i>
+          </div>
+          <div class="contact-item title">
+            <a href="'tel:'+person.contact.phone">{{person.contact.phone}}</a>
+          </div>
+          <!--<div class="contact-row dots">-->
+            <!--<i class="fa fa-circle" aria-hidden="true"></i>-->
+          <!--</div>-->
+          <!--<div class="contact-row">-->
+            <!--{{person.contact.street}} <br> {{person.contact.city}}-->
+          <!--</div>-->
+          <div class="contact-item icon">
+            <i class="fa github" aria-hidden="true"></i>
+          </div>
+          <div class="contact-item title">
+            <a :href="'https://github.com/'+person.contact.github">{{person.contact.github}}</a>
+          </div>
+          <div class="contact-item icon">
+            <i class="fa linkin" aria-hidden="true"></i>
+          </div>
+          <div class="contact-item title">
+            <a :href="'https://linkedin.com/'+person.contact.linkedin">{{person.contact.linkedin}}</a>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="left-col">
       <div class="person-image">
@@ -14,36 +50,6 @@
           <div class="img"></div>
         </div>
       </div>
-      <!--<div class="contact">-->
-      <!--<h3>{{ lang.headings.contact }}</h3>-->
-      <!--<div class="contact-row">-->
-      <!--<a :href="'mailto:'+person.contact.email">{{person.contact.email}}</a>-->
-      <!--</div>-->
-      <!--<div class="contact-row dots">-->
-      <!--<i class="fa fa-circle" aria-hidden="true"></i>-->
-      <!--<i class="fa fa-circle" aria-hidden="true"></i>-->
-      <!--<i class="fa fa-circle" aria-hidden="true"></i>-->
-      <!--</div>-->
-      <!--<div class="contact-row">-->
-      <!--<a href="'tel:'+person.contact.phone">{{person.contact.phone}}</a>-->
-      <!--</div>-->
-      <!--<div class="contact-row dots">-->
-      <!--<i class="fa fa-circle" aria-hidden="true"></i>-->
-      <!--<i class="fa fa-circle" aria-hidden="true"></i>-->
-      <!--<i class="fa fa-circle" aria-hidden="true"></i>-->
-      <!--</div>-->
-      <!--<div class="contact-row">-->
-      <!--{{person.contact.street}} <br> {{person.contact.city}}-->
-      <!--</div>-->
-      <!--<div class="contact-row dots">-->
-      <!--<i class="fa fa-circle" aria-hidden="true"></i>-->
-      <!--<i class="fa fa-circle" aria-hidden="true"></i>-->
-      <!--<i class="fa fa-circle" aria-hidden="true"></i>-->
-      <!--</div>-->
-      <!--<div class="contact-row">-->
-      <!--<a :href="'https://github.com/'+person.contact.github">https://github.com/{{person.contact.github}}</a>-->
-      <!--</div>-->
-      <!--</div>-->
       <div class="skills-block">
         <h3>{{ lang.headings.skills }}</h3>
         <div class="row" v-for="skillset in person.skills">
@@ -101,6 +107,16 @@
             </div>
           </div>
         </div>
+        <div class="achievements">
+          <h3>{{ lang.headings.achievements }}</h3>
+          <ul class="list">
+            <li v-for="ach in person.achievements">
+              <span class="ach-year"> {{ach.year}}</span>
+              <span class="ach-descr"> {{ach.description}} </span>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </div>
 
@@ -135,8 +151,8 @@
     }
     .top-row {
       width:100%;
-      padding-top:60px;
-      padding-bottom:60px;
+      padding-top:50px;
+      padding-bottom:50px;
       span {
         width:100%;
         display:block;
@@ -149,9 +165,63 @@
         letter-spacing:10px;
       }
       span.person-position {
+        font-size: 18px;
         letter-spacing:5px;
       }
     }
+    .contacts {
+      display:flex;
+      justify-content: center;
+    }
+
+    .contact-block {
+      margin-top: 30px;
+
+      h3 {
+        text-align: center;
+      }
+
+      .icon {
+        margin-right: 5px;
+        margin-left: 15px;
+      }
+
+      .title {
+        margin-top: -3px;
+      }
+
+      .contact-item {
+        text-align: center;
+        font-size: 14px;
+        align-self: center;
+        a {
+          color: black;
+        }
+
+        .fa {
+          width: 20px;
+          height: 20px;
+          background-size: 20px 20px;
+        }
+
+        .email {
+          background-image: url('../assets/mail.png');
+        }
+
+        .phone {
+          background-image: url('../assets/call.png');
+        }
+
+        .github {
+          background-image: url('../assets/github.png');
+        }
+
+        .linkin {
+          background-image: url('../assets/linkin.png');
+        }
+      }
+    }
+
     .left-col {
       width:30%;
       float:left;
@@ -170,27 +240,6 @@
           width:100%;
         }
       }
-      .contact h3 {
-        text-align:center;
-        margin-top:20px;
-      }
-      .contact .contact-row {
-        text-align:center;
-        letter-spacing:2px;
-        margin-bottom:3px;
-        a {
-          color:black;
-        }
-      }
-      .contact .contact-row:first-of-type {
-        margin-top:50px;
-      }
-      .contact .contact-row.dots {
-        margin-top:20px;
-        margin-bottom:15px;
-        font-size:10px;
-        color:rgba(153,153,153,0.6);
-      }
     }
     .right-col {
       width:48%;
@@ -205,6 +254,11 @@
       }
       .experience-block {
         margin-bottom: 20px;
+
+        .row {
+          /*display: flex;*/
+          /*justify-content: space-between;*/
+        }
         .row:first-child {
           margin-bottom:3px;
         }
@@ -231,6 +285,7 @@
         }
       }
       .education {
+        margin-bottom: 20px;
         .education-block {
           margin-bottom:10px;
           .row {
@@ -275,6 +330,19 @@
           width:100%;
           margin-top:20px;
         }
+      }
+    }
+    .achievements {
+      ul {
+        margin: 0 0;
+        padding-left: 20px;
+        li {
+          font-size: 14px;
+        }
+      }
+
+      .ach-year {
+        color: @colorAccent;
       }
     }
   }
