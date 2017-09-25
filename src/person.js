@@ -60,14 +60,14 @@ export const PERSON = {
       timeperiod: 'Aug 2017 - Dec 2018',
       description: 'Illinois Institute of Technology, IL, USA.',
       grad_year: '2018',
-      gpa: '4.0/4.0'
+      gpa: 'TBA'
     },
     {
       degree: 'Bachelor of Science in Software Engineering',
       timeperiod: 'Sep 2013 - Jun 2017',
       description: 'Kyiv Polytechnic Institute, Kyiv, Ukraine.',
       grad_year: '2017',
-      gpa: '4.0/4.0'
+      gpa: '3.6/4.0'
     }
   ],
   // skill level goes 0 to 100
@@ -127,6 +127,10 @@ export const PERSON = {
     {
       year: '2014',
       description: 'Winner of the Open Mobile Hackathon KPI'
+    },
+    {
+      year: '2011',
+      description: 'Second place in citywide Web Design contest'
     }
   ],
   skillDescription: 'Also proficient with Android Development.',
