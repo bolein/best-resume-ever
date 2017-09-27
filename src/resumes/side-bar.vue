@@ -338,6 +338,7 @@
         padding-left: 20px;
         li {
           font-size: 14px;
+          margin-bottom: 4px;
         }
       }
 
