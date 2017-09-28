@@ -16,7 +16,7 @@ export const PERSON = {
     {
       company: 'Jutiful, Ltd.',
       position: 'Software Engineer (Part-time)',
-      timeperiod: 'May 2017 - Current',
+      timeperiod: 'May 2017 - Aug 2017 (3 mos)',
       bullets: [
         'Designing workflows for continuous delivery',
         'Writing flexible build scripts with Gradle DSL',
@@ -25,13 +25,13 @@ export const PERSON = {
     },
     {
       company: 'Depositphotos, Inc.',
-      position: 'Middle Android Developer',
+      position: 'Middle Software Developer',
       timeperiod: 'Mar 2016 - Nov 2016 (9 mos)',
       bullets: [
         'Collaborated inside a Scrum team',
         'Integrated reactive design patterns',
         'Conducted workshops on RxJava',
-        'Delivered 4 successful releases'
+        'Contributed to 4 successful releases'
       ]
     },
     {
@@ -39,7 +39,7 @@ export const PERSON = {
       position: 'Android Team Lead',
       timeperiod: 'Nov 2015 - Feb 2016 (4 mos)',
       bullets: [
-        'Leaded a small team in creation of private beta',
+        'Leaded a small team in creation of private beta release',
         'Used innovative development methodologies for quick and lossless reactions to requirements change',
         'Successfully delivered MVP in the shortest term'
       ]
@@ -114,7 +114,7 @@ export const PERSON = {
         },
         {
           name: 'Tools',
-          description: 'Intellij Idea, Git'
+          description: 'Intellij Idea, Git, Jira, Trello'
         }
       ]
     }
@@ -127,15 +127,10 @@ export const PERSON = {
     {
       year: '2014',
       description: 'Winner of the Open Mobile Hackathon KPI'
-    },
-    {
-      year: '2011',
-      description: 'Second place in citywide Web Design contest'
     }
   ],
-  skillDescription: 'Also proficient with Android Development.',
   contact: {
-    email: 'vadym@appsmithy.com',
+    email: 'vovcharenko@hawk.iit.edu',
     phone: '312 619 9022',
     street: '3201 S State Street',
     city: 'Chicago',
