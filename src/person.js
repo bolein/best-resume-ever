@@ -6,26 +6,35 @@ export const PERSON = {
     last: 'Ovcharenko',
   },
   image: '../assets/person.jpg',
-  position: 'Machine Learning Engineer',
+  position: 'Chief Technical Officer',
   birth: {
     year: 1995,
     location: 'Kyiv, Ukraine'
   },
-  summary : 'Master of Data Science with over 4 years of academic and work experience in software engineering. Seeking position as machine learning engineer.',
+  summary : 'Hacker, dreamer, leader. Seek to create & perfect.',
   experience: [
     {
-      company: 'Jutiful, Ltd.',
-      position: 'Software Engineer (Part-time)',
-      timeperiod: 'May 2017 - Aug 2017 (3 mos)',
+      company: 'App Development Shop',
+      position: 'CTO, Co-Founder',
+      timeperiod: 'Oct 2017 - Present',
       bullets: [
-        'Designing workflows for continuous delivery',
-        'Writing flexible build scripts with Gradle DSL',
-        'Adopting native code to Android platform using JNI'
+        'Scaled from a cluster of freelancers to an international software development agency with multiple offices in less than a year',
+        'Assembled and trained several development and analytical teams from scratch',
+        'Managed successful delivery of multiple mobile and web releases for millions of users',
+        'Established agile processes and continuous integration environments allowing frequent releases within continuously changed requirements and priorities'
+      ]
+    },
+    {
+      company: 'AppSmithy',
+      position: 'Project Technical Lead',
+      timeperiod: 'Nov 2016 - Oct 2017 (1 yr)',
+      bullets: [
+        'Guided and coordinated distributed and offline development teams',
       ]
     },
     {
       company: 'Depositphotos, Inc.',
-      position: 'Middle Software Developer',
+      position: 'Software Engineer',
       timeperiod: 'Mar 2016 - Nov 2016 (9 mos)',
       bullets: [
         'Collaborated inside a Scrum team',
@@ -60,7 +69,7 @@ export const PERSON = {
       timeperiod: 'Aug 2017 - Dec 2018',
       description: 'Illinois Institute of Technology, IL, USA.',
       grad_year: '2018',
-      gpa: 'TBA'
+      gpa: '4.0/4.0'
     },
     {
       degree: 'Bachelor of Science in Software Engineering',
@@ -130,11 +139,11 @@ export const PERSON = {
     }
   ],
   contact: {
-    email: 'vovcharenko@hawk.iit.edu',
-    phone: '312 619 9022',
-    street: '3201 S State Street',
+    email: 'vadym@theappshop.eu',
+    phone: '559 921 9595',
+    street: '3349 S Wabash Ave',
     city: 'Chicago',
-    website: 'appsmithy.com',
+    website: 'theappshop.eu',
     github: 'bolein',
     linkedin: 'vadymovcharenko'
   },
